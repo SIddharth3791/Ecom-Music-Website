@@ -3,5 +3,7 @@ Technologies:- Spring Web MVC Framework, Spring Data, Spring Security, Spring RE
 
 #Functionality 
 (1) Individually developed online music Store.
+
 (2) User can sell/Buy instruments, DJ equipment and many more.
+
 (3) User insterface is build using BootStrap, Angular JS and JSP.
