@@ -1,70 +1,17 @@
 package com.emusicstore.dao;
-import java.io.IOException;
-import java.util.ArrayList;
+
 import java.util.List;
 
-import com.emusicstore.model.*;
+import com.emusicstore.model.Product;
 
-public class ProductDao {
+public interface ProductDao {
 	
-	private List<Product> productList;
+	void addProduct(Product product);
 	
-	public List<Product> getProductList()
-	{
-		productList = new ArrayList<Product>();
-		
-		Product product1 = new Product();
-		product1.setProductID("MI1");
-		product1.setProductName("Guitar 1");
-		product1.setProductCategory("Instrument");
-		product1.setProductDescription("This is fender strat guitar");
-		product1.setProductPrice(1200);
-		product1.setProductCondition("New");
-		product1.setProductStatus("Active");
-		product1.setUnitInStrock(10);
-		product1.setProductManufacturer("Fender");
-		
-		Product product2 = new Product();
-		product2.setProductID("MI2");
-		product2.setProductName("Trumpet ");
-		product2.setProductCategory("Instrument");
-		product2.setProductDescription("LJ Hutcheon BB Trumpet ");
-		product2.setProductPrice(650);
-		product2.setProductCondition("Used");
-		product2.setProductStatus("Active");
-		product2.setUnitInStrock(23);
-		product2.setProductManufacturer("Hutcheon");
-		
-		Product product3 = new Product();
-		product3.setProductID("MI3");
-		product3.setProductName("Speaker");
-		product3.setProductCategory("Accessory");
-		product3.setProductDescription("This is a Polk Shelf Speaker");
-		product3.setProductPrice(355);
-		product3.setProductCondition("New");
-		product3.setProductStatus("Active");
-		product3.setUnitInStrock(5);
-		product3.setProductManufacturer("Polk");
-		
-		productList.add(product1);
-		productList.add(product2);
-		productList.add(product3);
-		
-		return productList;
-	}
+	Product getProductById(String id);
 	
-	public Product getProductById(String productId) throws IOException
-	{
-		for (Product product: getProductList())
-		{
-			if (product.getProductId().equals(productId))
-			{
-				return product;
-			}
-		}
-		
-		throw new IOException("No product Found");
-	}
+	List<Product> getAllProduct();
 	
+	void deleteProduct(String id);
 
 }
