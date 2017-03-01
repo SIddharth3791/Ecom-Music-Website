@@ -16,7 +16,7 @@
 <!-- get Product Name -->
 		
 		<div class = "form-group">
-			<label for = "name"> Name</label>
+			<label for = "name"> Name</label> <form:errors path="productName" cssStyle="color:#ff0000;"/>
 			<form:input path = "productName" id="name" class ="form-control"/>
 		</div>
 		
@@ -42,7 +42,7 @@
 <!-- get Product Price -->		
 
 		 <div class = "form-group">
-			<label for = "price"> Price</label>
+			<label for = "price"> Price</label> <form:errors path="productPrice" cssStyle="color:#ff0000;"/>
 			<form:input path = "productPrice" id="price" class ="form-control"/>
 		</div>
 		
@@ -70,7 +70,7 @@
 <!-- get Product Unit In Stock -->		
 
         <div class="form-group">
-            <label for="unitInStrock">Unit In Stock</label>
+            <label for="unitInStrock">Unit In Stock</label> <form:errors path="unitInStrock" cssStyle="color:#ff0000;"/>
             <form:input path="unitInStrock" id="unitInStrock" class="form-Control"/>
         </div>
 		
