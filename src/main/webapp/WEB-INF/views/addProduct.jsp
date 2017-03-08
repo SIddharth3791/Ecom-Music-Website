@@ -11,8 +11,8 @@
 		<p class = "lead">Please fill the below information to add new product</p>
 		</div>
 		
-		<form:form action="${pageContext.request.contextPath}/admin/productInventory/addProduct"  method="Post" commandName ="product"  enctype="multipart/form-data">
-		
+		<form:form action="${pageContext.request.contextPath}/admin/productInventory/addProduct" method="post"
+                   commandName="product" enctype="multipart/form-data">
 <!-- get Product Name -->
 		
 		<div class = "form-group">
