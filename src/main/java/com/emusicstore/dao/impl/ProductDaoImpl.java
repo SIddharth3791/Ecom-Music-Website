@@ -45,8 +45,8 @@ public class ProductDaoImpl implements ProductDao{
         session.flush();
     }
 
-	@Override
-	public List<Product> getAllProducts() {
+
+    public List<Product> getAllProducts() {
 		 Session session = sessionFactory.getCurrentSession();
 	        Query query = session.createQuery("from Product");
 	        List<Product> products = query.list();
