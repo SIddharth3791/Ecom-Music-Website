@@ -6,7 +6,7 @@ import java.util.Map;
 public class Cart {
 		
 	private String cartId;
-	private Map<String, CartItem> cartItems;
+    private Map<String, CartItem> cartItems = new HashMap<String, CartItem>();
 	private double grandTotal;
 	
 	private Cart()
