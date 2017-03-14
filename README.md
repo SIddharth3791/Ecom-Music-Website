@@ -3,7 +3,7 @@ Individually developed online music Store using following Technologies:-
 
 Spring Web MVC Framework, Spring Data, Spring Security, Spring REST, Spring Web Flow, Hibernate, Angular JS, JSP, Bootstrap, H2 Database and jQuery
 
-#Functionality 
+# Functionality 
 
 (1) User for Ecom-Music-Website are Customer and Admin.
 
